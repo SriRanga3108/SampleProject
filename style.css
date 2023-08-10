@@ -1,0 +1,63 @@
+h1{
+    background-color: blue;
+    color:white;
+    padding:3px;
+    text-align: center;
+}
+main{
+    display: flex;
+}
+main nav{
+    width:25%;
+    border-right:2px solid grey;
+    background-color: blueviolet;
+    min-height:90vh;
+    margin-right:20px;
+}
+nav li{
+    list-style: none;
+    border-bottom:1px solid;
+    padding:20px 10px;
+}
+nav ul{
+    margin:0;
+    padding:0;
+}
+
+nav li a{
+    color:white;
+    margin-left:10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        background-color: brown;
+    }
+
+    main {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main nav {
+        border-right: none;
+        min-height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    h1{
+    background-color: violet;
+    }
+    pre{
+      /* min-width: 400px;
+      max-width: 600px; */
+      overflow: auto;
+    }
+}
